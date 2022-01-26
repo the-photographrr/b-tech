@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.Scanner;
 class EmployeeFinally
 {
-    String name,emp_code;
+    String name;
     double salary;
     int age;
     void idk(int k) throws ArithmeticException
@@ -38,12 +38,10 @@ class empexc
             char x=employee.name.charAt(b);
         }
         finally{
-            System.out.println(" not necessary...");
-            System.out.println("wcan u stay");
             if(employee.age>=60)
-                throw new ArithmeticException("fired");
+                throw new ArithmeticException("fired age over");
             else
-                System.out.println("You can continue");
+                System.out.println("You can continue ");
             sc.close();
         }
     }
